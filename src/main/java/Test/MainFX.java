@@ -22,6 +22,10 @@ launch(args);
     public void start(Stage stage) throws Exception {
        // FXMLLoader loader =new FXMLLoader(getClass().getResource("/AjouterPersonne.fxml"));
         FXMLLoader loader =new FXMLLoader(getClass().getResource("/AjouterUser.fxml"));
+
+       // FXMLLoader loader =new FXMLLoader(getClass().getResource("/AfficherUser.fxml"));
+
+
         //Parent root = null;
        try {
 

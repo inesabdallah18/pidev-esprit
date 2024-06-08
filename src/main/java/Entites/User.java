@@ -8,7 +8,7 @@ public class User {
     String email;
     String pwd;
 
-    public User(int id, String nom, String prenom, String email, String pwd, String s){
+    public User(int id, String nom, String prenom, String email, String numero, String pwd){
 
         this.id=id;
         this.nom=nom;
@@ -77,4 +77,19 @@ public class User {
     public void setPwd(String pwd) {
         this.pwd = pwd;
     }
+
+        @Override
+        public String toString() {
+            return "User{" +
+                    "id='" + id + '\'' +
+                    "nom='" + nom + '\'' +
+                    ", prenom='" + prenom + '\'' +
+                    ", numero='" + numero + '\'' +
+                    ", email='" + email + '\'' +
+                    ", pwd=" + pwd+
+                    '}';
+        }
+
+
+
 }
