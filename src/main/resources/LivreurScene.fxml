@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane opacity="0.82" prefHeight="666.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LivreurScene">
+   <children>
+      <AnchorPane layoutX="-23.0" layoutY="-9.0" prefHeight="170.0" prefWidth="648.0" style="-fx-background-color: #21808e;">
+         <children>
+            <Label layoutX="40.0" layoutY="14.0" prefHeight="60.0" prefWidth="197.0" text="SeaFood" textFill="WHITE">
+               <font>
+                  <Font name="Andalus" size="38.0" />
+               </font>
+            </Label>
+            <Label accessibleRole="HYPERLINK" layoutX="40.0" layoutY="60.0" prefHeight="18.0" prefWidth="137.0" text="Delivery" textFill="#b0c8d6">
+               <font>
+                  <Font name="Bell MT" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="SearchID" layoutX="139.0" layoutY="111.0" prefHeight="26.0" prefWidth="398.0" />
+            <Label layoutX="271.0" layoutY="113.0" prefHeight="22.0" prefWidth="119.0" text=" Search Order ID" textAlignment="CENTER" textFill="#b9b1b1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="idtable" layoutX="4.0" layoutY="396.0" prefHeight="266.0" prefWidth="614.0">
+        <columns>
+          <TableColumn fx:id="ID_Commande" prefWidth="104.79995346069336" text="ID_Command" />
+          <TableColumn fx:id="id_nom" prefWidth="107.20001220703125" text="ClientName" />
+            <TableColumn fx:id="id_numclient" prefWidth="99.20001220703125" text="NumClient" />
+            <TableColumn fx:id="id_description" prefWidth="127.19996643066406" text="Description" />
+            <TableColumn fx:id="id_status" prefWidth="173.60001220703123" text="Status" />
+        </columns>
+         <opaqueInsets>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </TableView>
+      <AnchorPane fx:id="IDPending" layoutX="37.0" layoutY="198.0" prefHeight="170.0" prefWidth="246.0" style="-fx-background-color: #6dabb1;">
+         <children>
+            <Label layoutX="86.0" layoutY="131.0" prefHeight="30.0" prefWidth="74.0" text="Pending" textFill="#f2f1f1">
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="IDDelivered" layoutX="330.0" layoutY="198.0" prefHeight="170.0" prefWidth="246.0" style="-fx-background-color: #5d8489;">
+         <children>
+            <Label layoutX="86.0" layoutY="133.0" prefHeight="30.0" prefWidth="74.0" text="Delivered" textFill="#f2f1f1">
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="6.0" layoutY="171.0" text="Recent" textFill="#21808e">
+         <font>
+            <Font name="Forte" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

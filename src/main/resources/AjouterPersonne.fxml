@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AjouterPersonne">
+   <children>
+      <Button layoutX="95.0" layoutY="256.0" mnemonicParsing="false" onAction="#AjouterP" prefHeight="26.0" prefWidth="134.0" text="Ajouter" textFill="#246591" textOverrun="CLIP">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="32.0" layoutY="107.0" text="Nom" />
+      <Label layoutX="33.0" layoutY="155.0" text="Prenom" />
+      <Label layoutX="36.0" layoutY="200.0" text="Age" />
+      <TextField fx:id="IDNom" layoutX="88.0" layoutY="103.0" />
+      <TextField fx:id="IDPrenom" layoutX="89.0" layoutY="150.0" />
+      <TextField fx:id="IDAge" layoutX="90.0" layoutY="195.0" />
+      <AnchorPane layoutX="286.0" layoutY="-6.0" prefHeight="413.0" prefWidth="314.0" style="-fx-background-color: #246591;" />
+   </children>
+</AnchorPane>
