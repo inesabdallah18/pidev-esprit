@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<<<<<<< HEAD
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AjouterPersonne">
+   <children>
+      <Button layoutX="95.0" layoutY="256.0" mnemonicParsing="false" onAction="#AjouterP" prefHeight="26.0" prefWidth="134.0" text="Ajouter" textFill="#246591" textOverrun="CLIP">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="32.0" layoutY="107.0" text="Nom" />
+      <Label layoutX="33.0" layoutY="155.0" text="Prenom" />
+      <Label layoutX="36.0" layoutY="200.0" text="Age" />
+      <TextField fx:id="IDNom" layoutX="88.0" layoutY="103.0" />
+      <TextField fx:id="IDPrenom" layoutX="89.0" layoutY="150.0" />
+      <TextField fx:id="IDAge" layoutX="90.0" layoutY="195.0" />
+      <AnchorPane layoutX="286.0" layoutY="-6.0" prefHeight="413.0" prefWidth="314.0" style="-fx-background-color: #246591;" />
+   </children>
+</AnchorPane>
+=======
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #3d76b7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AjouterPersonne">
+   <children>
+      <!-- Panneau de gauche avec formulaire -->
+      <AnchorPane prefHeight="400.0" prefWidth="300.0">
+         <children>
+            <!-- Titre -->
+            <Label layoutX="100.0" layoutY="20.0" text="Ajouter Personne" textFill="#FFFFFF">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+
+            <!-- Champ de saisie pour le nom -->
+            <Label layoutX="30.0" layoutY="70.0" text="Nom" textFill="#FFFFFF" />
+            <TextField fx:id="tfnom" layoutX="100.0" layoutY="65.0" prefWidth="150.0" />
+
+            <!-- Champ de saisie pour le prénom -->
+            <Label layoutX="30.0" layoutY="120.0" text="Prénom" textFill="#FFFFFF" />
+            <TextField fx:id="tfprenom" layoutX="100.0" layoutY="115.0" prefWidth="150.0" />
+
+            <!-- Champ de saisie pour l'âge -->
+            <Label layoutX="30.0" layoutY="170.0" text="Âge" textFill="#FFFFFF" />
+            <TextField fx:id="tfage" layoutX="100.0" layoutY="165.0" prefWidth="150.0" />
+
+            <!-- Bouton Ajouter -->
+            <Button layoutX="100.0" layoutY="220.0" mnemonicParsing="false" onAction="#ajoutertoDb" text="Ajouter" style="-fx-background-color: #ec5418; -fx-text-fill: #FFFFFF;" />
+         </children>
+      </AnchorPane>
+
+      <!-- Panneau de droite avec image -->
+      <AnchorPane layoutX="300.0" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #EEC4C9;">
+         <children>
+            <!-- Image représentative -->
+            <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="0.0" layoutY="50.0" preserveRatio="true">
+               <image>
+                  <Image url="@images/téléchargement.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
+
+>>>>>>> c008da9ae62a4d2548a3133edfb0508e1c8cce2c

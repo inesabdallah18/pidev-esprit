@@ -10,4 +10,7 @@ public interface IService <T> {
     T findById(int e)throws SQLException;
 
     List<T> readAll() throws SQLException;
+
+
+
 }

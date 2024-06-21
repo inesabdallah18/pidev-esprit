@@ -1,5 +1,6 @@
 package Utils;
 
+import java.sql.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -12,6 +13,7 @@ public class DataSource {
     private Connection con;
 
     private DataSource(){
+
         try{
            con=DriverManager.getConnection(url,login,pwd);
             System.out.println("connexion établie");
@@ -19,12 +21,16 @@ public class DataSource {
             System.out.println("connexsion non étabile"+e);}
    }
 
-    public  Connection getCon() {return con;
-    }
+   public Connection getCon() {
+       return con;
+   }
 
-    public static DataSource getInstance(){
+    public static DataSource getInstance() {
+
         if(data==null)
             data=new DataSource();
         return data;
     }
+
+
 }
