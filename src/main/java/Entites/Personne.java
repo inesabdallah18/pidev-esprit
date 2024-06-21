@@ -4,6 +4,10 @@ public class Personne {
 
     private int id;
     private String nom,prenom;
+<<<<<<< HEAD
+=======
+
+>>>>>>> c008da9ae62a4d2548a3133edfb0508e1c8cce2c
     private int age;
 
     public Personne(int id, String nom, String prenom, int age) {
@@ -60,5 +64,10 @@ public class Personne {
                 ", age=" + age +
                 '}';
     }
+<<<<<<< HEAD
 }
 
+=======
+
+}
+>>>>>>> c008da9ae62a4d2548a3133edfb0508e1c8cce2c

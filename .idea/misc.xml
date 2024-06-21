@@ -9,7 +9,11 @@
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+=======
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="openjdk-21" project-jdk-type="JavaSDK">
+>>>>>>> c008da9ae62a4d2548a3133edfb0508e1c8cce2c
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
